@@ -1,0 +1,70 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- Boostrap的CSS設定跟ICON -->
+    <link rel="stylesheet" href="./Boostrap/_css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Boostrap的CSS設定跟ICON -->
+
+    <!-- JS動畫(菜單) -->
+    <script src="./Boostrap/_js/bootstrap.bundle.js"></script>
+    <!-- JS動畫(菜單) -->
+
+<link rel="stylesheet" href="./css/main.css">
+
+<script src="./JS/main.js"></script>
+<script src="./JS/getContent.js"></script>
+<script src="./JS/getType.js"></script>
+
+
+
+<div class="flex">
+
+  <div class="d-flex justify-content-center">
+
+<div>
+    <label for="alertType">Choose alert type :</label>
+    <select id="alertType" name="alertType">
+      <option value="check-circle">check-circle</option>
+      <option value="checked_192">checked_192</option>
+      <option value="icons8-ok">icons8-ok</option>
+      <option value="icons8-warning-96">icons8-warning-96</option>
+      <option value="icons8-x">icons8-x</option>
+    </select>
+    <hr>
+</div>      
+  </div>
+  <div class="d-flex justify-content-center">
+    type some text and it will showup after you click the button
+  </div>
+  <div class="d-flex justify-content-center">
+    <input type="text" name="alertContent" id="alertContent">
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <img src="./IMG/check-circle.gif" alt="">
+  </div>
+
+
+
+
+<!-- here is the most imporant part of code -->
+  <div class="d-flex justify-content-center">
+        
+        <button id="alert" class="btn btn-outline-primary">確認</button>
+    
+    
+        <div id="custom-alert" class="hidden">
+            <div class="icon-container">
+              <img src="./IMG/check-circle.gif" alt="Anime Icon">
+            </div>
+            <div class="message-container">
+              <p id="custom-alert-message"></p>
+              
+            </div>
+          </div>
+    
+    
+          
+      </div>
+</div>
+
